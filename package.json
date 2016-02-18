@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "jspm bundle src/app bundle/main.bundle.js --minify --inject",
-    "serve": "jspm unbundle"
+    "serve": "jspm depcache src/app.js && jspm unbundle && browser-sync start --server --files '**/*.*'"
   },
   "repository": {
     "type": "git",
