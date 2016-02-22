@@ -4,25 +4,18 @@
   "description": "jspm boilerplate es6",
   "main": "src/app.js",
   "scripts": {
+    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "jspm bundle src/app bundle/main.bundle.js --minify --inject",
-    "serve": "jspm depcache src/app.js && jspm unbundle && browser-sync start --server --files '**/*.*'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/master-atul/jspm-es6.git"
+    "serve": "jspm depcache src/app.js && jspm unbundle && browser-sync start --server --files '**/*.*'",
+    "jspminstall": "jspm install"
   },
   "keywords": [
     "jspm",
-    "boilerplate",
     "es6"
   ],
   "author": "Atul R <atulanand94@gmail.com> (http://atulr.com)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/master-atul/jspm-es6/issues"
-  },
-  "homepage": "https://github.com/master-atul/jspm-es6#readme",
   "jspm": {
     "dependencies": {
       "css": "github:systemjs/plugin-css@^0.1.20",
